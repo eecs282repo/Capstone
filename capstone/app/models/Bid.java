@@ -6,7 +6,7 @@ import play.db.jpa.*;
 
 @Entity
 public class Bid extends Model{
-	public Long id;
+	public Long bidid;
 	public String email;
 	public int price;
 	public String password;
@@ -17,7 +17,7 @@ public class Bid extends Model{
 	public Bid(Long id, String email, int price){
 		assert(id > 0);
 		assert(price > 0);
-		this.id = id;
+		this.bidid = id;
 		this.email = email;
 		this.price = price;
 	}
@@ -26,6 +26,6 @@ public class Bid extends Model{
 		this.price = price;
 	}
 	public static Bid connect(Long id){
-		return find("byId", id).first();
+		return find("byBidid", id).first();
 	}
 }

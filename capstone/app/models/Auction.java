@@ -6,7 +6,7 @@ import play.db.jpa.*;
 
 @Entity
 public class Auction extends Model{
-	public Long id;
+	public Long auctionid;
 	public String name;
 	public int suggestedPrice;
 	public String description;
@@ -21,15 +21,15 @@ public class Auction extends Model{
 			String description,
 			String email){
 		assert(id > 0 || suggestedPrice > 0);
-		this.id = id;
+		this.auctionid = id;
 		this.name = name;
-		this.suggestedPrice = suggested{rice;
+		this.suggestedPrice = suggestedPrice;
 		this.description = description;
 		this.email = email;
 		this.password = password;
 	}
 	
 	public static Auction connect(Long id){
-		return find("byId", id).first();
+		return find("byAuctionid", id).first();
 	}
 }

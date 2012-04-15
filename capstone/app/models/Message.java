@@ -1,4 +1,4 @@
-package Models;
+package models;
 
 import javax.persistence.*;
 
@@ -6,7 +6,7 @@ import play.db.jpa.*;
 
 @Entity
 public class Message extends Model{
-	public Long id;
+	public Long messageid;
 	public String subject;
 	public String body;
 	public Long bidId;
@@ -14,13 +14,13 @@ public class Message extends Model{
 	public Message(){}
 
 	public Message(Long id, String subject, String body, Long bidId){
-		this.id = id;
+		this.messageid = id;
 		this.subject = subject;
 		this.body = body;
 		this.bidId = bidId;
 	}
 	
 	public static Message connect(Long id){
-		return find("byId", id).first();
+		return find("byMessageid", id).first();
 	}
 }
