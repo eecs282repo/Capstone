@@ -28,7 +28,18 @@ public class Auction extends Model{
 		this.email = email;
 		this.password = password;
 	}
-	
+	public boolean equals(Auction other){
+		if (	other.auctionid != this.auctionid ||
+			!(other.name.equals(this.name)) ||
+			other.suggestedPrice != this.suggestedPrice ||
+			!(other.description.equals(this.description)) ||
+			!(other.password.equals(this.password))){
+			
+			return false;
+		} else {
+			return true;
+		}
+	}
 	public static Auction connect(Long id){
 		return find("byAuctionid", id).first();
 	}

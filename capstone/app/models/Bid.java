@@ -10,16 +10,22 @@ public class Bid extends Model{
 	public String email;
 	public int price;
 	public String password;
-	public Long auctionId; //Needed to associate with Auction somehow
+	public Long auctionid; //Needed to associate with Auction somehow
 
 	public Bid(){}
 	
-	public Bid(Long id, String email, int price){
+	public Bid(	Long id,
+			String email,
+			int price,
+			String password,
+			Long auctionid){
 		assert(id > 0);
 		assert(price > 0);
 		this.bidid = id;
 		this.email = email;
 		this.price = price;
+		this.password = password;
+		this.auctionid = auctionid;
 	}
 	public void updateBid(int price){
 		assert(price > 0);
