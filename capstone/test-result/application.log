@@ -1,272 +1,86 @@
-15 Apr 2012 00:23:37,022 INFO  ~ Starting /home/joe/Documents/eecs282/capstone/Capstone/capstone
-15 Apr 2012 00:23:38,694 WARN  ~ You're running Play! in DEV mode
-15 Apr 2012 00:23:39,167 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-15 Apr 2012 00:23:48,442 ERROR ~ 
+16 Apr 2012 00:57:12,686 INFO  ~ Starting /home/joe/Documents/eecs282/capstone/Capstone/capstone
+16 Apr 2012 00:57:14,240 WARN  ~ You're running Play! in DEV mode
+16 Apr 2012 00:57:14,617 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+16 Apr 2012 00:57:29,701 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+16 Apr 2012 00:57:31,522 INFO  ~ Application 'capstone' is now started !
+16 Apr 2012 01:11:48,014 ERROR ~ 
 
-@6a3lfcl6g
-Internal Server Error (500) for request GET /
+@6a432mg0m
+Internal Server Error (500) for request GET /@tests
 
-Compilation error (In /app/models/Message.java around line 1)
-The file /app/models/Message.java could not be compiled. Error raised is : The declared package "Models" does not match the expected package "models"
+Compilation error (In /app/models/Bid.java around line 38)
+The file /app/models/Bid.java could not be compiled. Error raised is : Syntax error on token ";", * expected
 
-play.exceptions.CompilationException: The declared package "Models" does not match the expected package "models"
-	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
-	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
-	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)
-	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
-	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:424)
-	at play.Play.start(Play.java:505)
-	at play.Play.detectChanges(Play.java:629)
-	at play.Invoker$Invocation.init(Invoker.java:198)
-	at Invocation.HTTP Request(Play!)
-15 Apr 2012 00:24:17,457 ERROR ~ 
-
-@6a3lfcl6n
-Internal Server Error (500) for request GET /
-
-Compilation error (In /app/models/Auction.java around line 26)
-The file /app/models/Auction.java could not be compiled. Error raised is : Syntax error on token "{", . expected
-
-play.exceptions.CompilationException: Syntax error on token "{", . expected
+play.exceptions.CompilationException: Syntax error on token ";", * expected
 	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
 	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:478)
 	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
-	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:424)
-	at play.Play.start(Play.java:505)
-	at play.Play.detectChanges(Play.java:629)
-	at play.Invoker$Invocation.init(Invoker.java:198)
-	at Invocation.HTTP Request(Play!)
-15 Apr 2012 00:24:42,672 ERROR ~ 
-
-@6a3lfcl6o
-Internal Server Error (500) for request GET /
-
-Compilation error (In /app/models/AuctionCategory.java around line 19)
-The file /app/models/AuctionCategory.java could not be compiled. Error raised is : Type mismatch: cannot convert from GenericModel.JPAQuery to AuctionCategory
-
-play.exceptions.CompilationException: Type mismatch: cannot convert from GenericModel.JPAQuery to AuctionCategory
-	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
-	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
-	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)
-	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
-	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:424)
-	at play.Play.start(Play.java:505)
-	at play.Play.detectChanges(Play.java:629)
-	at play.Invoker$Invocation.init(Invoker.java:198)
-	at Invocation.HTTP Request(Play!)
-15 Apr 2012 00:25:44,262 ERROR ~ 
-
-@6a3lfcl6p
-Internal Server Error (500) for request GET /
-
-Compilation error (In /app/models/AuctionCategory.java around line 19)
-The file /app/models/AuctionCategory.java could not be compiled. Error raised is : auctionId cannot be resolved to a variable
-
-play.exceptions.CompilationException: auctionId cannot be resolved to a variable
-	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
-	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
-	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)
-	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
 	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:277)
 	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:322)
 	at play.Play.detectChanges(Play.java:614)
 	at play.Invoker$Invocation.init(Invoker.java:198)
 	at Invocation.HTTP Request(Play!)
-15 Apr 2012 00:25:58,952 ERROR ~ 
+16 Apr 2012 01:13:05,048 ERROR ~ 
 
-@6a3lfcl70
-Internal Server Error (500) for request GET /
-
-Compilation error (In /app/models/AuctionCategory.java around line 19)
-The file /app/models/AuctionCategory.java could not be compiled. Error raised is : Type mismatch: cannot convert from GenericModel.JPAQuery to AuctionCategory
-
-play.exceptions.CompilationException: Type mismatch: cannot convert from GenericModel.JPAQuery to AuctionCategory
-	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
-	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
-	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)
-	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
-	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:277)
-	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:322)
-	at play.Play.detectChanges(Play.java:614)
-	at play.Invoker$Invocation.init(Invoker.java:198)
-	at Invocation.HTTP Request(Play!)
-15 Apr 2012 00:28:20,279 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
-15 Apr 2012 00:28:21,076 ERROR ~ 
-
-@6a3lfcl71
-Internal Server Error (500) for request GET /
-
-JPA error
-A JPA error occurred (Unable to build EntityManagerFactory): Repeated column in mapping for entity: models.Bid column: id (should be mapped with insert="false" update="false")
-
-play.exceptions.JPAException: Unable to build EntityManagerFactory
-	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:242)
-	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
-	at play.Play.start(Play.java:515)
-	at play.Play.detectChanges(Play.java:629)
-	at play.Invoker$Invocation.init(Invoker.java:198)
-	at Invocation.HTTP Request(Play!)
-Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: models.Bid column: id (should be mapped with insert="false" update="false")
-	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:676)
-	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:698)
-	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:720)
-	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:474)
-	at org.hibernate.mapping.RootClass.validate(RootClass.java:235)
-	at org.hibernate.cfg.Configuration.validate(Configuration.java:1332)
-	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1835)
-	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
-	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:240)
-	... 5 more
-15 Apr 2012 00:29:52,958 ERROR ~ 
-
-@6a3lfcl72
-Internal Server Error (500) for request GET /
-
-JPA error
-A JPA error occurred (Unable to build EntityManagerFactory): Repeated column in mapping for entity: models.Category column: id (should be mapped with insert="false" update="false")
-
-play.exceptions.JPAException: Unable to build EntityManagerFactory
-	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:242)
-	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
-	at play.Play.start(Play.java:515)
-	at play.Play.detectChanges(Play.java:629)
-	at play.Invoker$Invocation.init(Invoker.java:198)
-	at Invocation.HTTP Request(Play!)
-Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: models.Category column: id (should be mapped with insert="false" update="false")
-	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:676)
-	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:698)
-	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:720)
-	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:474)
-	at org.hibernate.mapping.RootClass.validate(RootClass.java:235)
-	at org.hibernate.cfg.Configuration.validate(Configuration.java:1332)
-	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1835)
-	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
-	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:240)
-	... 5 more
-15 Apr 2012 00:30:50,264 ERROR ~ 
-
-@6a3lfcl73
-Internal Server Error (500) for request GET /
-
-JPA error
-A JPA error occurred (Unable to build EntityManagerFactory): Repeated column in mapping for entity: models.Auction column: id (should be mapped with insert="false" update="false")
-
-play.exceptions.JPAException: Unable to build EntityManagerFactory
-	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:242)
-	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
-	at play.Play.start(Play.java:515)
-	at play.Play.detectChanges(Play.java:629)
-	at play.Invoker$Invocation.init(Invoker.java:198)
-	at Invocation.HTTP Request(Play!)
-Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: models.Auction column: id (should be mapped with insert="false" update="false")
-	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:676)
-	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:698)
-	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:720)
-	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:474)
-	at org.hibernate.mapping.RootClass.validate(RootClass.java:235)
-	at org.hibernate.cfg.Configuration.validate(Configuration.java:1332)
-	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1835)
-	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
-	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:240)
-	... 5 more
-15 Apr 2012 00:31:29,058 ERROR ~ 
-
-@6a3lfcl74
-Internal Server Error (500) for request GET /
-
-JPA error
-A JPA error occurred (Unable to build EntityManagerFactory): Repeated column in mapping for entity: models.Item column: id (should be mapped with insert="false" update="false")
-
-play.exceptions.JPAException: Unable to build EntityManagerFactory
-	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:242)
-	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
-	at play.Play.start(Play.java:515)
-	at play.Play.detectChanges(Play.java:629)
-	at play.Invoker$Invocation.init(Invoker.java:198)
-	at Invocation.HTTP Request(Play!)
-Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: models.Item column: id (should be mapped with insert="false" update="false")
-	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:676)
-	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:698)
-	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:720)
-	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:474)
-	at org.hibernate.mapping.RootClass.validate(RootClass.java:235)
-	at org.hibernate.cfg.Configuration.validate(Configuration.java:1332)
-	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1835)
-	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
-	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:240)
-	... 5 more
-15 Apr 2012 00:32:01,560 ERROR ~ 
-
-@6a3lfcl75
-Internal Server Error (500) for request GET /
-
-JPA error
-A JPA error occurred (Unable to build EntityManagerFactory): Repeated column in mapping for entity: models.Message column: id (should be mapped with insert="false" update="false")
-
-play.exceptions.JPAException: Unable to build EntityManagerFactory
-	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:242)
-	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
-	at play.Play.start(Play.java:515)
-	at play.Play.detectChanges(Play.java:629)
-	at play.Invoker$Invocation.init(Invoker.java:198)
-	at Invocation.HTTP Request(Play!)
-Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: models.Message column: id (should be mapped with insert="false" update="false")
-	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:676)
-	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:698)
-	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:720)
-	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:474)
-	at org.hibernate.mapping.RootClass.validate(RootClass.java:235)
-	at org.hibernate.cfg.Configuration.validate(Configuration.java:1332)
-	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1835)
-	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
-	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:240)
-	... 5 more
-15 Apr 2012 00:32:23,356 INFO  ~ Application 'capstone' is now started !
-15 Apr 2012 00:57:09,478 ERROR ~ 
-
-@6a3lfcl76
-Internal Server Error (500) for request GET /
-
-Compilation error (In /app/models/Auction.java around line 34)
-The file /app/models/Auction.java could not be compiled. Error raised is : suggestPrice cannot be resolved or is not a field
-
-play.exceptions.CompilationException: suggestPrice cannot be resolved or is not a field
-	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
-	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
-	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)
-	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
-	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:277)
-	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:322)
-	at play.Play.detectChanges(Play.java:614)
-	at play.Invoker$Invocation.init(Invoker.java:198)
-	at Invocation.HTTP Request(Play!)
-15 Apr 2012 00:57:48,864 ERROR ~ 
-
-@6a3lfcl77
-Internal Server Error (500) for request GET /
-
-Compilation error (In /test/BasicTest.java around line 9)
-The file /test/BasicTest.java could not be compiled. Error raised is : The constructor Auction(int, String, int, String, String) is undefined
-
-play.exceptions.CompilationException: The constructor Auction(int, String, int, String, String) is undefined
-	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
-	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
-	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)
-	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
-	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:277)
-	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:322)
-	at play.Play.detectChanges(Play.java:614)
-	at play.Invoker$Invocation.init(Invoker.java:198)
-	at Invocation.HTTP Request(Play!)
-15 Apr 2012 01:05:25,649 ERROR ~ 
-
-@6a3lfcl78
+@6a432mg0n
 Internal Server Error (500) for request GET /@tests
 
-Compilation error (In /test/BasicTest.java around line 28)
-The file /test/BasicTest.java could not be compiled. Error raised is : The constructor Bid(Long, String, int, String, Long) is undefined
+Compilation error (In /test/BasicTest.java around line 58)
+The file /test/BasicTest.java could not be compiled. Error raised is : Syntax error on token "13", delete this token
 
-play.exceptions.CompilationException: The constructor Bid(Long, String, int, String, Long) is undefined
+play.exceptions.CompilationException: Syntax error on token "13", delete this token
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:478)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:277)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:322)
+	at play.Play.detectChanges(Play.java:614)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+16 Apr 2012 01:37:00,933 ERROR ~ 
+
+@6a432mg0o
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/BasicTest.java around line 81)
+The file /test/BasicTest.java could not be compiled. Error raised is : Syntax error on token ";", , expected
+
+play.exceptions.CompilationException: Syntax error on token ";", , expected
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:478)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:277)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:322)
+	at play.Play.detectChanges(Play.java:614)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+16 Apr 2012 01:37:15,845 ERROR ~ 
+
+@6a432mg0p
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/BasicTest.java around line 88)
+The file /test/BasicTest.java could not be compiled. Error raised is : Cannot instantiate the type List&lt;Bid>
+
+play.exceptions.CompilationException: Cannot instantiate the type List<Bid>
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:277)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:322)
+	at play.Play.detectChanges(Play.java:614)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+16 Apr 2012 01:47:29,353 ERROR ~ 
+
+@6a432mg10
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/BasicTest.java around line 110)
+The file /test/BasicTest.java could not be compiled. Error raised is : Syntax error on token "}", delete this token
+
+play.exceptions.CompilationException: Syntax error on token "}", delete this token
 	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
 	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
 	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)

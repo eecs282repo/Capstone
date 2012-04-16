@@ -31,6 +31,19 @@ public class Bid extends Model{
 		assert(price > 0);
 		this.price = price;
 	}
+	public boolean equals(Bid other){
+		if (	this.bidid == other.bidid &&
+			this.email.equals(other.email) &&
+			this.price == other.price &&
+			this.password.equals(other.password) &&
+			this.auctionid == other.auctionid){
+			
+			return true;
+		} else {
+			return false;
+		}
+	}
+			
 	public static Bid connect(Long id){
 		return find("byBidid", id).first();
 	}

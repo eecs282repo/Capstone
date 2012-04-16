@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<testsuite failures="0" time="0.011" errors="0" skipped="0" tests="2" name="BasicTest">
-  <testcase classname="BasicTest" name="createAuction" time="0.006">
+<testsuite failures="0" time="0.034" errors="0" skipped="0" tests="4" name="BasicTest">
+  <testcase classname="BasicTest" name="createAuction" time="0.011">
       </testcase>
   <testcase classname="BasicTest" name="createBid" time="0.005">
+      </testcase>
+  <testcase classname="BasicTest" name="createMultipleBids" time="0.007">
+      </testcase>
+  <testcase classname="BasicTest" name="changeBidInfo" time="0.011">
       </testcase>
 </testsuite>
